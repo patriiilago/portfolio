@@ -1,0 +1,83 @@
+.app-container {
+    padding-top: 40px;
+}
+
+.app {
+    margin: 0px 95px;
+}
+
+.iconsConnect {
+    display: block;
+    left: 10px;
+    bottom: 0;
+    position: fixed;
+}
+
+.iconsConnect img {
+    width: 30px;
+}
+
+.iconsConnect il {
+    display: list-item;
+    list-style: none;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.verticalLine {
+    height: 100px;
+    width: 4px;
+    margin-left: 55px;
+    background-color: #61018e;
+}
+
+
+.iconsRight img {
+    width: 30px;
+}
+
+.iconsRight {
+    display: block;
+    right: 55px;
+    bottom: 0;
+    position: fixed;
+}
+
+.iconsRight il {
+    display: list-item;
+    list-style: none;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.verticalLineRight {
+    height: 100px;
+    width: 4px;
+    margin-left: 55px;
+    background-color: #61018e;
+}
+
+/* Tamaño de tablet */
+@media (min-width: 577px) and (max-width: 992px) {}
+
+/* Tamaño de móvil*/
+@media (max-width: 576px) {
+
+    .iconsConnect,
+    .iconsRight {
+        display: none !important;
+    }
+
+    .app {
+        margin: 0px 25px;
+    }
+
+
+
+}

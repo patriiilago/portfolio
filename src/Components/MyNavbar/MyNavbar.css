@@ -1,0 +1,141 @@
+.custom-navbar {
+    background-color: #8c8d8f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: top 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.aboutButton {
+    text-decoration: none;
+    padding: 0 5px;
+    color: #61018e;
+    display: inline-block;
+}
+
+.aboutButton:hover,
+.aboutButton:active {
+    transform: scale(1.05);
+    color: blue;
+}
+
+
+.navbar-toggler {
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+
+
+/*Tamaño móvil*/
+@media (max-width: 576px) {
+    .buttonIconNavbar {
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+    }
+
+    .buttonIconNavbar {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        content: "";
+        background: no-repeat center center;
+        background-size: 100% 100%;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        border-radius: 0.25rem;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+        transform: scale(1.05);
+    }
+
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    .collapse:not(.show) {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .buttonIconNavbar:hover {
+        /*transformar el boton al estar extendido en otra imagen*/
+    }
+
+}
+
+/* Tamaño de tablet (576px a 992px) */
+@media (min-width: 577px) and (max-width: 992px) {
+
+    .buttonIconNavbar {
+        display: none
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        display: none;
+    }
+
+    .navbar-expand-lg .navbar-collapse.collapse {
+        display: flex;
+        flex-basis: auto;
+    }
+
+    .navbar-expand-lg .navbar-toggler {
+        display: block;
+    }
+
+
+
+}
+
+@media (min-width: 993px) {
+    .buttonIconNavbar {
+        display: none
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        display: none;
+    }
+
+    .navbar-expand-lg .navbar-collapse.collapse {
+        display: flex;
+        flex-basis: auto;
+    }
+
+    .navbar-expand-lg .navbar-toggler {
+        display: block;
+    }
+}

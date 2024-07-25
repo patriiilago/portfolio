@@ -1,0 +1,136 @@
+.profileRows {
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.profileCol {
+    padding: 3rem;
+}
+
+.profileTitle {
+    text-decoration: underline #61018e;
+    font-size: 2.125rem;
+    padding: 25px;
+
+}
+
+.profileMyName {
+    color: #61018e
+}
+
+.buttonProfile {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.buttonProfileText {
+    display: flex;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #61018e;
+    padding: 0.625rem 2.5rem;
+    border: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.buttonProfileText:hover {
+    transform: scale(1.05);
+}
+
+.buttonIcon {
+    width: 1.25rem;
+    padding-left: 0.625rem;
+    vertical-align: middle;
+}
+
+.profilePhoto {
+    width: 100%;
+    max-width: 21.875rem;
+    padding: 0.438rem;
+    border: 0.125rem solid #61018e;
+}
+
+@media (max-width: 576px) {
+
+    .profileRows {
+        flex-wrap: wrap;
+    }
+
+    .profileCol {
+        padding: 1rem;
+    }
+
+    .profileTitle {
+        font-size: 1.5rem;
+        word-wrap: break-word;
+    }
+
+    .buttonProfileText {
+        padding: 0.5rem 1.5rem;
+        word-wrap: break-word;
+    }
+
+    .buttonIcon {
+        width: 1rem;
+        /* 16px = 1rem */
+        padding-left: 0.5rem;
+        /* 8px = 0.5rem */
+    }
+}
+
+/* Tamaño de tablet (576px a 992px) */
+@media (min-width: 577px) and (max-width: 992px) {
+
+    .profileRows {
+        flex-wrap: wrap;
+    }
+
+    .profileCol {
+        padding: 2rem;
+    }
+
+    .profileTitle {
+        font-size: 1.75rem;
+    }
+
+    .buttonProfileText {
+        padding: 0.563rem 2rem;
+    }
+
+    .buttonIcon {
+        width: 1.125rem;
+        padding-left: 0.563rem;
+    }
+
+    .profilePhoto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Tamaño de ordenador (a partir de 992px) */
+@media (min-width: 993px) {
+    .profileCol {
+        padding: 3rem;
+    }
+
+    .profileTitle {
+        font-size: 2.125rem;
+    }
+
+    .buttonProfileText {
+        padding: 0.625rem 2.5rem;
+    }
+
+    .buttonIcon {
+        width: 1.25rem;
+        padding-left: 0.625rem;
+    }
+}

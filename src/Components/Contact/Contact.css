@@ -1,0 +1,90 @@
+.contactTitle {
+    text-decoration: underline #61018e;
+    font-size: 34px;
+    padding: 25px;
+}
+
+.contactBox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+textarea,
+input:not([type="submit"]) {
+    height: 50px;
+    padding-left: 16px;
+    width: 800px;
+}
+
+textarea {
+    padding-top: 16px;
+    resize: none;
+    height: 250px;
+}
+
+input,
+textarea {
+    border: 1px solid #61018e;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    background-color: #9ea0a2cf;
+}
+
+
+.buttonContact {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #61018e;
+    width: 500px;
+    height: 3rem;
+    border: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border-radius: 7px;
+    vertical-align: middle;
+}
+
+.buttonContact:hover {
+    background-color: rgb(117, 22, 161);
+}
+
+/* Tamaño de tablet */
+@media (min-width: 577px) and (max-width: 992px) {
+
+    textarea,
+    input:not([type="submit"]) {
+
+        width: 550px;
+    }
+
+    .buttonContact {
+        width: 250px;
+    }
+}
+
+/* Tamaño de móvil*/
+@media (max-width: 576px) {
+
+    textarea,
+    input:not([type="submit"]) {
+
+        width: 250px;
+    }
+
+    .buttonContact {
+        width: 200px;
+    }
+
+}
