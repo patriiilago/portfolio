@@ -56,6 +56,9 @@
     border: 0.125rem solid #61018e;
 }
 
+
+/*Tamaño móvil*/
+
 @media (max-width: 576px) {
 
     .profileRows {

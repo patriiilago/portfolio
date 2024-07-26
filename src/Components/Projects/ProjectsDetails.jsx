@@ -13,7 +13,7 @@ const ProjectsDetails = () => {
             imagen: miauyuda,
             link: "https://miauyuda.netlify.app/",
             project: "Miauyuda",
-            description: "RipCamp is a SPA that connects current students of the Data Analytics and Web Development bootcamps to help them solve technical questions and problems. Development and deployment of a custom API with json server.",
+            description: "Miauyuda is a responsive application designed for people who have pets and need to consult a vet. With this application you can choose which professional best suits your pet's needs and have online consultations at any time of the day.",
             tech: "React Bootstrap NodeJS Express MongoDB "
         },
 

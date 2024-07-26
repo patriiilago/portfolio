@@ -49,7 +49,7 @@ function App() {
       </div>
 
       <aside className="iconsRight">
-        <a href="#profile">
+        <a href="#avatar" >
           <ul>
             <img src={arrow} alt="arrowIcon" />
           </ul>

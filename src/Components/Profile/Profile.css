@@ -13,14 +13,15 @@
 
 .nameAvatar {
     text-transform: uppercase;
+    padding: 10px 0px
 }
 
 
 .jobType {
     font-size: 100px;
     font-weight: bold;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 
 .jobTitle {
@@ -30,4 +31,33 @@
     margin-top: 0px;
     margin-bottom: 30px;
 
+}
+
+/*Tamaño móvil*/
+@media (max-width: 576px) {
+
+    .profileAvatar {
+        margin-top: 130px;
+    }
+
+    .jobType {
+        font-size: 60px;
+    }
+
+    .jobTitle {
+        font-size: 60px;
+    }
+}
+
+/* Tamaño de tablet (576px a 992px)  */
+@media (min-width: 577px) and (max-width: 992px) {
+
+    .profileAvatar {
+        margin-top: 200px;
+    }
+
+
+    .jobTitle {
+        margin-bottom: 80px;
+    }
 }
