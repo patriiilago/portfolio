@@ -1,31 +1,44 @@
+.skillsContainer {
+    margin-bottom: 80px;
+
+}
+
 .skillsTitle {
     text-decoration: underline #61018e;
     font-size: 34px;
     padding: 25px;
 }
 
+.skillsGrid {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .techIcons {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-bottom: 30px;
 }
+
 
 .columnIcons {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .icon {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .icon img {
     width: 30px;
-    margin: 10px 0;
-    margin-left: 10px;
+    margin-right: 10px;
+    margin-right: 10px;
     vertical-align: middle;
 }
 
@@ -36,10 +49,21 @@
 
 /*Tamaño móvil*/
 @media (max-width: 576px) {
+
+    .skillsContainer {
+        font-size: 14px;
+    }
+
     .icon img {
         width: 25px;
-        margin: 5px 0;
-        margin-left: 5px;
+        margin-right: 5px;
         vertical-align: middle;
     }
+
+    .skillsGrid {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
 }

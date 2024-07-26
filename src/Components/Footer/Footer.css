@@ -1,5 +1,57 @@
 .footer {
-    display: flex;
     font-size: 18px;
     justify-content: center;
+}
+
+.textFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 60px;
+}
+
+/* Tamaño de móvil*/
+@media (max-width: 576px) {
+    .connect {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .connect ul {
+        margin-top: 0px;
+        padding: 12px;
+    }
+
+    .connect img {
+        width: 30px;
+    }
+
+
+
+}
+
+
+/* Tamaño de ordenador (a partir de 992px) */
+@media (min-width: 993px) {
+    .connect {
+        display: none;
+    }
+
+    .textFooter {
+        margin-top: 80px;
+    }
+}
+
+/* Tamaño de tablet */
+@media (min-width: 577px) and (max-width: 992px) {
+    .connect {
+        display: none;
+    }
+
+    .textFooter {
+        margin-top: 80px;
+    }
 }

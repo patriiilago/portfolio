@@ -2,10 +2,6 @@
     background-color: #8c8d8f;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: top 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2px 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -17,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
@@ -31,7 +27,7 @@
 
 .aboutButton:hover,
 .aboutButton:active {
-    transform: scale(1.05);
+    transform: scale(1.10);
     color: blue;
 }
 
@@ -39,45 +35,60 @@
 .navbar-toggler {
     background-color: transparent;
     border: 1px solid transparent;
+
 }
 
 
 
 /*Tamaño móvil*/
 @media (max-width: 576px) {
-    .buttonIconNavbar {
-        background-size: cover;
-        width: 30px;
-        height: 30px;
-    }
-
-    .buttonIconNavbar {
-        display: inline-block;
-        width: 1.5em;
-        height: 1.5em;
-        vertical-align: middle;
-        content: "";
-        background: no-repeat center center;
-        background-size: 100% 100%;
-    }
 
     .navbar-toggler {
-        padding: 0.25rem 0.75rem;
-        font-size: 1.25rem;
         line-height: 1;
-        border-radius: 0.25rem;
         transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+
     }
 
-    .navbar-toggler:hover,
-    .navbar-toggler:focus {
-        transform: scale(1.05);
+    .navbar-header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
     }
+
+    .navbar-icons {
+        display: flex;
+        align-items: center;
+    }
+
+    .iconsNavbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 30px;
+    }
+
+    .iconsNavbar ul {
+        padding: 0px 0px
+    }
+
+    .hamburgerIcon {
+        width: 50px;
+    }
+
+    .hamburgerIcon:hover,
+    .arrowIconNavbar:hover,
+    .iconLanguageNavbar:hover {
+        transform: scale(1.10);
+    }
+
 
     .navbar-collapse {
         flex-basis: 100%;
         flex-grow: 1;
         align-items: center;
+        padding: 0px 0px;
     }
 
     .collapse:not(.show) {
@@ -91,7 +102,7 @@
         justify-content: center;
     }
 
-    .buttonIconNavbar:hover {
+    .hamburgerIcon:hover {
         /*transformar el boton al estar extendido en otra imagen*/
     }
 
@@ -100,7 +111,15 @@
 /* Tamaño de tablet (576px a 992px) */
 @media (min-width: 577px) and (max-width: 992px) {
 
-    .buttonIconNavbar {
+    .custom-navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .iconLanguageNavbar,
+    .arrowIconNavbar,
+    .hamburgerIcon {
         display: none
     }
 
@@ -122,7 +141,17 @@
 }
 
 @media (min-width: 993px) {
-    .buttonIconNavbar {
+
+    .custom-navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .iconLanguageNavbar,
+    .arrowIconNavbar,
+    .hamburgerIcon {
         display: none
     }
 
@@ -137,5 +166,14 @@
 
     .navbar-expand-lg .navbar-toggler {
         display: block;
+    }
+}
+
+
+/* Tamaño de ordenador (a partir de 992px) */
+@media (min-width: 993px) {
+
+    .navigation {
+        font-size: 30px;
     }
 }

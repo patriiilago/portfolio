@@ -1,0 +1,35 @@
+.iconsRight img {
+    width: 30px;
+}
+
+.iconsRight {
+    display: block;
+    right: 55px;
+    bottom: 0;
+    position: fixed;
+}
+
+.iconsRight il {
+    display: list-item;
+    list-style: none;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.verticalLineRight {
+    height: 100px;
+    width: 4px;
+    margin-left: 55px;
+    background-color: #61018e;
+}
+
+/* Tamaño de móvil*/
+@media (max-width: 576px) {
+
+    .iconsRight {
+        display: none !important;
+    }
+}

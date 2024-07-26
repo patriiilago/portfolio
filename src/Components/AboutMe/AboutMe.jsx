@@ -8,7 +8,7 @@ const AboutMe = () => {
 
 
     return (
-        <section>
+        <section className="aboutme">
             <h2 id="aboutme" className="profileTitle">About Me</h2>
 
             <Row className="profileRows">

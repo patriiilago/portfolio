@@ -1,15 +1,16 @@
-.projectsTitle {
-    text-decoration: underline #61018e;
-    font-size: 34px;
-    padding: 25px;
-}
-
 .projects {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     justify-items: center;
     align-items: center;
     gap: 30px;
+    margin-bottom: 80px;
+}
+
+.projectsTitle {
+    text-decoration: underline #61018e;
+    font-size: 34px;
+    padding: 25px;
 }
 
 .projectCard {
