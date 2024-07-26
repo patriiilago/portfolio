@@ -1,5 +1,33 @@
-.profileTitle {
-    text-decoration: underline #61018e;
-    font-size: 34px;
-    padding: 25px;
+.profile {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileAvatar {
+    width: 100%;
+    max-width: 21.875rem;
+    padding: 0.438rem;
+    margin-top: 90px;
+}
+
+.nameAvatar {
+    text-transform: uppercase;
+}
+
+
+.jobType {
+    font-size: 100px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.jobTitle {
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 30px;
+
 }
