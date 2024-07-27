@@ -1,11 +1,15 @@
 import "./MyNavbar.css"
-import { Nav, Navbar, Container } from 'react-bootstrap';
 
 import hamburger from "./../../assets/menuHamburger.png"
 import arrow from "./../../assets/arrow.png"
 import language from "./../../assets/language.png"
 
+import { Nav, Navbar, Container } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
+
 function MyNavbar() {
+
+    const { t } = useTranslation()
 
 
     return (
@@ -32,16 +36,16 @@ function MyNavbar() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="navigation">
                         <a href="#aboutme" className="aboutButton">
-                            <ul>About me</ul>
+                            <ul>{t('aboutMe')}</ul>
                         </a>
                         <a href="#skills" className="aboutButton">
-                            <ul>Skills</ul>
+                            <ul>{t('skills')}</ul>
                         </a>
                         <a href="#projects" className="aboutButton">
-                            <ul>Projects</ul>
+                            <ul>{t('projects')}</ul>
                         </a>
                         <a href="#contact" className="aboutButton">
-                            <ul>Contact</ul>
+                            <ul>{t('contact')}</ul>
                         </a>
                     </Nav>
                 </Navbar.Collapse>

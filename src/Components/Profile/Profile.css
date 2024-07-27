@@ -42,11 +42,11 @@
     }
 
     .jobType {
-        font-size: 60px;
+        font-size: 45px;
     }
 
     .jobTitle {
-        font-size: 60px;
+        font-size: 45px;
     }
 }
 
@@ -54,11 +54,19 @@
 @media (min-width: 577px) and (max-width: 992px) {
 
     .profileAvatar {
-        margin-top: 200px;
+        margin-top: 250px;
+    }
+
+    .jobType {
+        font-size: 65px;
+    }
+
+    .jobTitle {
+        font-size: 65px;
     }
 
 
     .jobTitle {
-        margin-bottom: 80px;
+        margin-bottom: 90px;
     }
 }

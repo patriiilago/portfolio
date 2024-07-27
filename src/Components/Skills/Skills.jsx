@@ -1,21 +1,27 @@
-import "./Skills.css";
-import react from "./../../assets/react.png";
-import nodejs from "./../../assets/nodejs.png";
-import mongodb from "./../../assets/mongodb.png";
-import github from "./../../assets/github.png";
-import javascript from "./../../assets/javascript.png";
-import express from "./../../assets/express.png";
-import html from "./../../assets/html.png";
-import css from "./../../assets/css.png";
-import bootstrap from "./../../assets/bootstrap.png";
-import java from "./../../assets/java.png";
+import "./Skills.css"
+import react from "./../../assets/react.png"
+import nodejs from "./../../assets/nodejs.png"
+import mongodb from "./../../assets/mongodb.png"
+import github from "./../../assets/github.png"
+import javascript from "./../../assets/javascript.png"
+import express from "./../../assets/express.png"
+import html from "./../../assets/html.png"
+import css from "./../../assets/css.png"
+import bootstrap from "./../../assets/bootstrap.png"
+import java from "./../../assets/java.png"
 
-import { Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap"
+import { useTranslation } from 'react-i18next'
 
 const Skills = () => {
+
+    const { t } = useTranslation()
+
     return (
         <div className="skillsContainer">
-            <h1 id="skills" className='skillsTitle'>Skills</h1>
+
+            <h1 id="skills" className='skillsTitle'>{t('skillsTitle')}</h1>
+
             <section className="skillsGrid">
                 <Row className='techIcons'>
                     <Col md={3} className="columnIcons">

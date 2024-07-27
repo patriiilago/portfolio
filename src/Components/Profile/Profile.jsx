@@ -1,8 +1,10 @@
 import "./Profile.css"
 import avatar from "./../../assets/woman-technologist.png"
+import { useTranslation } from 'react-i18next'
 
 function Profile() {
 
+    const { t } = useTranslation();
 
     return (
         <>
@@ -11,9 +13,10 @@ function Profile() {
 
                 <img src={avatar} alt="profile avatar" className="profileAvatar" />
                 <h2 className="nameAvatar">(patricia lago espiño)</h2>
-                <p className="jobType">Full-Stack</p>
-                <p className="jobTitle">Developer</p>
-
+                <div className="textJob">
+                    <p className="jobType">{t('jobType')}</p>
+                    <p className="jobTitle">{t('jobTitle')}</p>
+                </div>
             </section>
         </>
     )

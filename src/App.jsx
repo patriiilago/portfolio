@@ -9,9 +9,12 @@ import MyNavbar from "./Components/MyNavbar/MyNavbar.jsx"
 import Profile from "./Components/Profile/Profile.jsx"
 import IconsRight from "./Components/IconsRight/IconsRight.jsx"
 import IconsConnectLeft from "./Components/IconsConnectLeft/IconsConnectLeft.jsx"
+import './Components/Translations/i18n.js'
 
 
 function App() {
+
+
 
   return (
 

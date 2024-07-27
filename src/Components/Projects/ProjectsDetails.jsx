@@ -4,38 +4,41 @@ import ripcamp from "./../../assets/RipCamp.png"
 import "./ProjectsDetails.css"
 
 import { CardText, Col } from "react-bootstrap"
-import Card from 'react-bootstrap/Card';
-
+import Card from 'react-bootstrap/Card'
+import { useTranslation } from 'react-i18next'
 
 const ProjectsDetails = () => {
+
+    const { t } = useTranslation()
+
     const ProjectCard = [
         {
             imagen: miauyuda,
             link: "https://miauyuda.netlify.app/",
-            project: "Miauyuda",
-            description: "Miauyuda is a responsive application designed for people who have pets and need to consult a vet. With this application you can choose which professional best suits your pet's needs and have online consultations at any time of the day.",
-            tech: "React Bootstrap NodeJS Express MongoDB "
+            project: t('miauyuda.title'),
+            description: t('miauyuda.description'),
+            tech: t('miauyuda.tech')
         },
 
         {
             imagen: bricksBreaker,
             link: "https://github.com/Blasdelezo1/brick-breaker-MVP",
-            project: "Bricks Breaker",
-            description: "The game consists of a paddle that the player controls to bounce a ball and break bricks arranged at the top of the screen.",
-            tech: "HTML CSS JavaScript"
+            project: t('bricksBreaker.title'),
+            description: t('bricksBreaker.description'),
+            tech: t('bricksBreaker.tech')
         },
         {
             imagen: ripcamp,
             link: "https://ripcamp.netlify.app/",
-            project: "Ripcamp",
-            description: "RipCamp is a SPA that connects current students of the Data Analytics and Web Development bootcamps to help them solve technical questions and problems. Development and deployment of a custom API with json server.",
-            tech: "HTML CSS JavaScript React Bootstrap"
+            project: t('ripcamp.title'),
+            description: t('ripcamp.description'),
+            tech: t('ripcamp.tech')
         }
     ];
 
     return (
         <section >
-            <h1 id="projects" className="projectsTitle">Projects</h1>
+            <h1 id="projects" className="projectsTitle">{t('projectsTitle')}</h1>
             <article className="projects" >
                 {ProjectCard.map((card, index) =>
                     <Card key={index} className="projectCard">
