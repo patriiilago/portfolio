@@ -1,64 +1,59 @@
-import bricksBreaker from "./../../assets/BricksBreaker.png"
-import miauyuda from "./../../assets/MiauYuda.png"
-import ripcamp from "./../../assets/RipCamp.png"
-import "./ProjectsDetails.css"
+import React from 'react';
+import bricksBreaker from "./../../assets/BricksBreaker.png";
+import miauyuda from "./../../assets/MiauYuda.png";
+import ripcamp from "./../../assets/RipCamp.png";
+import styles from './ProjectsDetails.module.css';
 
-import { CardText, Col } from "react-bootstrap"
-import Card from 'react-bootstrap/Card'
-import { useTranslation } from 'react-i18next'
+import { CardText, Col } from "react-bootstrap";
+import Card from 'react-bootstrap/Card';
+import { useTranslation } from 'react-i18next';
 
 const ProjectsDetails = () => {
+    const { t } = useTranslation();
 
-    const { t } = useTranslation()
-
-    const ProjectCard = [
+    const projectCards = [
         {
-            imagen: miauyuda,
+            image: miauyuda,
             link: "https://miauyuda.netlify.app/",
-            project: t('miauyuda.title'),
+            title: t('miauyuda.title'),
             description: t('miauyuda.description'),
             tech: t('miauyuda.tech')
         },
-
         {
-            imagen: bricksBreaker,
+            image: bricksBreaker,
             link: "https://github.com/Blasdelezo1/brick-breaker-MVP",
-            project: t('bricksBreaker.title'),
+            title: t('bricksBreaker.title'),
             description: t('bricksBreaker.description'),
             tech: t('bricksBreaker.tech')
         },
         {
-            imagen: ripcamp,
+            image: ripcamp,
             link: "https://ripcamp.netlify.app/",
-            project: t('ripcamp.title'),
+            title: t('ripcamp.title'),
             description: t('ripcamp.description'),
             tech: t('ripcamp.tech')
         }
     ];
 
     return (
-        <section >
-            <h1 id="projects" className="projectsTitle">{t('projectsTitle')}</h1>
-            <article className="projects" >
-                {ProjectCard.map((card, index) =>
-                    <Card key={index} className="projectCard">
+        <section>
+            <h1 id="projects" className={styles.projectsTitle}>{t('projectsTitle')}</h1>
+            <article className={styles.projectsGrid}>
+                {projectCards.map((card, index) => (
+                    <Card key={index} className={styles.projectCard}>
                         <a href={card.link}>
-                            <Card.Img className="projectImg" src={card.imagen} alt={card.project} />
-                            <Card.Body className="projectText">
-                                <Card.Title className="projectTitle">{card.project}</Card.Title>
-                                <Card.Text className="projectDescription">
-                                    {card.description}
-                                </Card.Text>
-                                <CardText className="projectTech">
-                                    {card.tech}
-                                </CardText>
+                            <Card.Img className={styles.projectImage} src={card.image} alt={card.title} />
+                            <Card.Body className={styles.projectCardBody}>
+                                <Card.Title className={styles.projectTitle}>{card.title}</Card.Title>
+                                <Card.Text className={styles.projectDescription}>{card.description}</Card.Text>
+                                <CardText className={styles.projectTech}>{card.tech}</CardText>
                             </Card.Body>
                         </a>
                     </Card>
-                )}
+                ))}
             </article>
         </section>
-    )
-    //TODO: arreglar descripcion miauyuda
+    );
 }
-export default ProjectsDetails
+
+export default ProjectsDetails;

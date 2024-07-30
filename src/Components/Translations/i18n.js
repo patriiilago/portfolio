@@ -13,25 +13,25 @@ i18n
                     "jobTitle": "Developer",
                     "profileTitle": "About Me",
                     "profileMyName": "I am Patri Lago,",
-                    "profileDescription1": "Full stack developer with excellent communication skills. I love collaborating and working as a team.",
-                    "profileDescription2": "Apart from programming, I also enjoy sports, especially water sports and cycling.",
+                    "profileDescription1": " a Junior Full Stack developer on an exciting journey of exploration and creativity in the dynamic world of web development. My personal projects have allowed me to hone my skills and push my own limits. I love collaborating and working in a team.",
+                    "profileDescription2": "Besides programming, I enjoy sports, especially water sports and road cycling. These activities give me a sense of freedom and peace, feeding my creativity and focus.",
                     "downloadCV": "Download CV",
                     "skillsTitle": "Skills",
                     "projectsTitle": "Projects",
                     "projectsTitle": "Projects",
                     "miauyuda": {
                         "title": "Miauyuda",
-                        "description": "Miauyuda is a responsive application designed for people who have pets and need to consult a vet. With this application you can choose which professional best suits your pet's needs and have online consultations at any time of the day.",
+                        "description": "MiauYuda is a responsive application created specifically for pet owners looking for the best veterinary care. This platform allows you to select the veterinarian that best suits your pet's needs, offering the convenience of online consultations at any time of the day.",
                         "tech": "React Bootstrap NodeJS Express MongoDB"
                     },
                     "bricksBreaker": {
                         "title": "Bricks Breaker",
-                        "description": "The game consists of a paddle that the player controls to bounce a ball and break bricks arranged at the top of the screen.",
+                        "description": "Bricks Breaker is an addictive and classic game where the main objective is to control a paddle to bounce a ball and break all the bricks arranged at the top of the screen. With each hit, the bricks are destroyed. The game requires precision skills and quick reflexes to keep the ball from falling.",
                         "tech": "HTML CSS JavaScript"
                     },
                     "ripcamp": {
                         "title": "Ripcamp",
-                        "description": "RipCamp is a SPA that connects current students of the Data Analytics and Web Development bootcamps to help them solve technical questions and problems. Development and deployment of a custom API with json server.",
+                        "description": "RipCamp is an innovative web application designed to facilitate the connection between students of Data Analytics and Web Development bootcamps.The platform allows students to collaborate and solve technical questions and problems in an efficient, fast and collaborative way.",
                         "tech": "HTML CSS JavaScript React Bootstrap"
                     },
                     "contactTitle": "Contact",
@@ -52,8 +52,8 @@ i18n
                     "jobTitle": "Desarrolladora",
                     "profileTitle": "Sobre mí",
                     "profileMyName": "Soy Patri Lago,",
-                    "profileDescription1": "Desarrolladora full stack con excelentes habilidades de comunicación. Me encanta colaborar y trabajar en equipo.",
-                    "profileDescription2": "Además de programar, también disfruto de los deportes, especialmente los deportes acuáticos y el ciclismo.",
+                    "profileDescription1": " desarrolladora Junior Full Stack en un emocionante viaje de exploración y creatividad en el dinámico mundo del desarrollo web. Mis proyectos personales me han permitido perfeccionar mis habilidades y superar mis propios límites. Me encanta colaborar y trabajar en equipo.",
+                    "profileDescription2": "Además de programar, disfruto de los deportes, sobretodo los deportes acuáticos y el ciclismo de carretera.Estas actividades me brindan una sensación de libertad y paz, alimentando mi creatividad y enfoque.",
                     "downloadCV": "Descargar CV",
                     "skillsTitle": "Habilidades",
                     "projectsTitle": "Proyectos",
@@ -61,17 +61,17 @@ i18n
                     "projectsTitle": "Proyectos",
                     "miauyuda": {
                         "title": "Miauyuda",
-                        "description": "Miauyuda es una aplicación responsiva diseñada para personas que tienen mascotas y necesitan consultar a un veterinario. Con esta aplicación puedes elegir qué profesional se adapta mejor a las necesidades de tu mascota y tener consultas en línea en cualquier momento del día.",
+                        "description": "MiauYuda es una aplicación responsiva creada específicamente para dueños de mascotas que buscan la mejor atención veterinaria. Esta plataforma permite seleccionar al veterinario que mejor se adapte a las necesidades de las mascotas, ofreciendo la conveniencia de consultas en línea en cualquier momento del día.",
                         "tech": "React Bootstrap NodeJS Express MongoDB"
                     },
                     "bricksBreaker": {
                         "title": "Bricks Breaker",
-                        "description": "El juego consiste en una paleta que el jugador controla para hacer rebotar una bola y romper ladrillos dispuestos en la parte superior de la pantalla.",
+                        "description": "Bricks Breaker es un juego adictivo y clásico donde el objetivo principal es controlar una paleta para hacer rebotar una bola y romper todos los ladrillos dispuestos en la parte superior de la pantalla. Con cada golpe, los ladrillos se destruyen. El juego requiere habilidades de precisión y reflejos rápidos para evitar que la bola caiga.",
                         "tech": "HTML CSS JavaScript"
                     },
                     "ripcamp": {
                         "title": "Ripcamp",
-                        "description": "RipCamp es una SPA que conecta a los estudiantes actuales de los bootcamps de Data Analytics y Desarrollo Web para ayudarles a resolver dudas y problemas técnicos. Desarrollo y despliegue de una API personalizada con json server.",
+                        "description": "RipCamp es una aplicación web innovadora diseñada para facilitar la conexión entre estudiantes de bootcamps especializados en Data Analytics y Desarrollo Web. La plataforma permite a los estudiantes colaborar y resolver dudas y problemas técnicos de manera eficiente, rápida y colaborativa.",
                         "tech": "HTML CSS JavaScript React Bootstrap"
                     },
                     "contactTitle": "Contacto",

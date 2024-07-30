@@ -140,4 +140,8 @@
         width: 1.25rem;
         padding-left: 0.625rem;
     }
+
+    .profilePhoto {
+        min-width: 350px;
+    }
 }
