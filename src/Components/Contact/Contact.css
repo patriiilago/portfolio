@@ -4,8 +4,9 @@
 
  .contactTitle {
      text-decoration: underline #61018e;
-     font-size: 34px;
+     font-size: 2rem;
      padding: 25px;
+     text-align: center;
  }
 
  .contactBox {

@@ -1,5 +1,5 @@
 .custom-navbar {
-    background-color: #8c8d8f;
+    background-color: #0f324a;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: top 0.3s;
     position: fixed;
@@ -7,6 +7,7 @@
     left: 0;
     width: 100%;
     z-index: 1000;
+    border-bottom: 1px solid white;
 }
 
 .navigation {
@@ -21,7 +22,7 @@
 .aboutButton {
     text-decoration: none;
     padding: 0 5px;
-    color: #61018e;
+    color: white;
     display: inline-block;
 }
 
@@ -140,6 +141,7 @@
 
 }
 
+/* Tamaño ordenador*/
 @media (min-width: 993px) {
 
     .custom-navbar {
@@ -147,6 +149,10 @@
         justify-content: center;
         align-items: center;
 
+    }
+
+    .navigation {
+        font-size: 20px;
     }
 
     .iconLanguageNavbar,
@@ -167,13 +173,21 @@
     .navbar-expand-lg .navbar-toggler {
         display: block;
     }
-}
 
-
-/* Tamaño de ordenador (a partir de 992px) */
-@media (min-width: 993px) {
-
-    .navigation {
-        font-size: 30px;
+    .navbar-header {
+        padding: 10px 0;
+        /* Reducir el padding para acercar los elementos */
     }
+
+    .navbar-toggler {
+        padding: 0;
+        /* Reducir o eliminar el padding del botón del menú */
+    }
+
+    .aboutButton {
+        padding: 5px;
+        /* Reducir el padding de los botones de navegación */
+    }
+
+
 }

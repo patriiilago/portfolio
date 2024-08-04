@@ -15,9 +15,9 @@
 
 .profileTitle {
     text-decoration: underline #61018e;
-    font-size: 2.125rem;
+    font-size: 2rem;
     padding: 25px;
-
+    text-align: center;
 }
 
 .profileMyName {
