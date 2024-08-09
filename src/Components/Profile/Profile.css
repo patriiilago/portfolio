@@ -1,36 +1,61 @@
+.profileArticle {
+    background: #331C52;
+    margin-top: 80px;
+    width: 100%;
+    min-width: 100vh;
+}
+
 .profile {
-    text-align: center;
-    align-items: center;
+    display: flex;
+    height: 490px;
     justify-content: center;
-    margin-bottom: 80px;
+    align-items: flex-start;
+    gap: 267px;
+}
+
+.textJob {
+    align-self: stretch;
+}
+
+.greeting {
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.myName {
+    color: #8121D0;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.lastName {
+    color: #8121D0;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .profileAvatar {
-    width: 100%;
-    max-width: 21.875rem;
-    padding: 0.438rem;
-    margin-top: 90px;
+    width: 390px;
+    height: 390px;
+    margin-top: 40px;
 }
 
-.nameAvatar {
-    text-transform: uppercase;
-    padding: 10px 0px
-}
-
-
-.jobType {
-    font-size: 100px;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 0px;
-}
 
 .jobTitle {
-    font-size: 100px;
-    font-weight: bold;
-    color: white;
-    margin-top: 0px;
-    margin-bottom: 30px;
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
 
 }
 

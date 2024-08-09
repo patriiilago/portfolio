@@ -18,7 +18,7 @@ const AboutMe = () => {
             <Row className="profileRows">
 
                 <Col md={6} className="profileCol">
-                    <article className="profile">
+                    <article className="profileAvatar">
                         <p>
                             <span className="profileMyName">{t('profileMyName')}</span>
                             {t('profileDescription1')}

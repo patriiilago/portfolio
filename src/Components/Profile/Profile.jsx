@@ -7,18 +7,28 @@ function Profile() {
     const { t } = useTranslation();
 
     return (
-        <>
+
+        <article className="profileArticle">
 
             <section className="profile" id="avatar">
 
-                <img src={avatar} alt="profile avatar" className="profileAvatar" />
-                <h2 className="nameAvatar">(patricia lago espiño)</h2>
                 <div className="textJob">
-                    <p className="jobType">{t('jobType')}</p>
+
+                    <p className="greeting">{t('greeting')}</p>
+
+                    <p className="myName">{t('myName')}</p>
+
+                    <p className="lastName">{t('lastName')}</p>
+
                     <p className="jobTitle">{t('jobTitle')}</p>
+
                 </div>
+
+                <img src={avatar} alt="profile avatar" className="profileAvatar" />
+
             </section>
-        </>
+
+        </article>
     )
 }
 

@@ -1,6 +1,6 @@
 .custom-navbar {
-    background-color: #0f324a;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, #8121D0 0%, #42116A 100%);
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.50);
     transition: top 0.3s;
     position: fixed;
     top: 0;
@@ -12,24 +12,29 @@
 
 .navigation {
     display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-    font-size: 25px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+    height: 80px;
+    align-items: center;
+    flex-shrink: 0;
+    font-family: 'Lexend', Arial, sans-serif;
 }
 
-.aboutButton {
+.textNavbar ul {
     text-decoration: none;
     padding: 0 5px;
     color: white;
     display: inline-block;
+    color: #FFF;
+    font-family: Lexend;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .aboutButton:hover,
 .aboutButton:active {
     transform: scale(1.10);
-    color: blue;
+
 }
 
 
@@ -37,6 +42,16 @@
     background-color: transparent;
     border: 1px solid transparent;
 
+}
+
+.contactNavbar ul {
+    display: flex;
+    display: inline;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    flex: 1 0 0;
+    align-self: stretch;
 }
 
 
@@ -155,6 +170,7 @@
         font-size: 20px;
     }
 
+    .navbar-header,
     .iconLanguageNavbar,
     .arrowIconNavbar,
     .hamburgerIcon {
@@ -174,10 +190,6 @@
         display: block;
     }
 
-    .navbar-header {
-        padding: 10px 0;
-        /* Reducir el padding para acercar los elementos */
-    }
 
     .navbar-toggler {
         padding: 0;
