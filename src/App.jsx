@@ -7,6 +7,7 @@ import Contact from "./Components/Contact/Contact.jsx"
 import Footer from "./Components/Footer/Footer.jsx"
 import MyNavbar from "./Components/MyNavbar/MyNavbar.jsx"
 import Profile from "./Components/Profile/Profile.jsx"
+import LimitSection from "./Components/LimitSection/LimitSection.jsx"
 import './Components/Translations/i18n.js'
 
 
@@ -19,7 +20,9 @@ function App() {
       <MyNavbar />
       <Profile />
       <AboutMe />
+      <LimitSection />
       <Skills />
+      <LimitSection />
       <ProjectsDetails />
       <Contact />
       <Footer />

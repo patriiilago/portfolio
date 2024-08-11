@@ -1,0 +1,13 @@
+.lineSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+}
+
+.line {
+    width: 1000px;
+    stroke-width: 2px;
+    padding: 40px;
+    stroke: #331C52;
+}

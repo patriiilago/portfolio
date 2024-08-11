@@ -1,46 +1,90 @@
-.aboutme {
-    margin-bottom: 80px;
+.sectionAboutMe {
+    height: 564px;
+    padding: 0px 100px;
+    display: flex;
+    height: 564px;
+    padding: 0px 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    align-self: stretch;
+
 }
 
 .profileRows {
     display: flex;
-    margin: 0 auto;
-    max-width: 100%;
+    align-items: center;
     justify-content: center;
+    gap: 170px;
+
 }
 
 .profileCol {
-    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
 }
+
 
 .profileTitle {
-    text-decoration: underline #61018e;
-    font-size: 2rem;
-    padding: 25px;
-    text-align: center;
+    padding: 0px 100px;
+    height: 46px;
+    font-family: Michroma;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-.profileMyName {
-    color: #61018e
+.profilePhoto {
+    width: 400px;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 0px 64px 0px 0px;
+    background: url(<path-to-image>) lightgray -127.043px -92.584px / 168.544% 121.407% no-repeat;
+    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
-.buttonProfile {
+.aboutMe {
     display: flex;
+    width: 550px;
+    height: 292px;
+    flex-direction: column;
     justify-content: center;
-    text-decoration: none;
+    align-items: center;
+    gap: 30px;
 }
+
+.profileDescription {
+    height: 170px;
+    align-self: stretch;
+    color: #331C52;
+    text-align: justify;
+    font-family: Michroma;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 
 .buttonProfileText {
     display: flex;
-    text-transform: uppercase;
-    text-align: center;
-    align-items: center;
+    width: 250px;
+    height: 50px;
+    padding: 10px;
     justify-content: center;
-    background-color: #61018e;
-    padding: 0.625rem 2.5rem;
-    border: none;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    align-items: center;
+    align-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
     cursor: pointer;
+    border-radius: 16px;
+    background: #331C52;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
+    color: white;
 }
 
 .buttonProfileText:hover {
@@ -53,12 +97,7 @@
     vertical-align: middle;
 }
 
-.profilePhoto {
-    width: 100%;
-    max-width: 21.875rem;
-    padding: 0.438rem;
-    border: 0.125rem solid #61018e;
-}
+
 
 
 /*Tamaño móvil*/
@@ -123,25 +162,4 @@
 }
 
 /* Tamaño de ordenador (a partir de 992px) */
-@media (min-width: 993px) {
-    .profileCol {
-        padding: 3rem;
-    }
-
-    .profileTitle {
-        font-size: 2.125rem;
-    }
-
-    .buttonProfileText {
-        padding: 0.625rem 2.5rem;
-    }
-
-    .buttonIcon {
-        width: 1.25rem;
-        padding-left: 0.625rem;
-    }
-
-    .profilePhoto {
-        min-width: 350px;
-    }
-}
+@media (min-width: 993px) {}

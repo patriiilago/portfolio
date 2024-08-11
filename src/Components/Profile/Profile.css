@@ -1,8 +1,13 @@
 .profileArticle {
     background: #331C52;
     margin-top: 80px;
-    width: 100%;
-    min-width: 100vh;
+    display: flex;
+    height: 450px;
+    padding: 0px 100px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
 }
 
 .profile {
