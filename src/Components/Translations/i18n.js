@@ -18,7 +18,8 @@ i18n
                     "profileDescription1": " a Junior Full Stack developer on an exciting journey of exploration and creativity in the dynamic world of web development. My personal projects have allowed me to hone my skills and push my own limits. I love collaborating and working in a team.",
                     "profileDescription2": "Besides programming, I enjoy sports, especially water sports and road cycling. These activities give me a sense of freedom and peace, feeding my creativity and focus.",
                     "downloadCV": "Download CV",
-                    "skillsTitle": "Skills",
+                    "skillsTitle": "My Skills",
+                    "skillsDescription": "I'm a web developer with experience in JavaScript, React, NodeJS, Express, SQL, and MongoDB. I’m proficient in HTML5, CSS3, and Bootstrap for creating responsive interfaces. Currently, I'm learning TypeScript to enhance the robustness of my applications.",
                     "projectsTitle": "Projects",
                     "projectsTitle": "Projects",
                     "miauyuda": {
@@ -59,7 +60,8 @@ i18n
                     "profileDescription1": " desarrolladora Junior Full Stack en un emocionante viaje de exploración y creatividad en el dinámico mundo del desarrollo web. Mis proyectos personales me han permitido perfeccionar mis habilidades y superar mis propios límites. Me encanta colaborar y trabajar en equipo.",
                     "profileDescription2": "Además de programar, disfruto de los deportes, sobretodo los deportes acuáticos y el ciclismo de carretera.Estas actividades me brindan una sensación de libertad y paz, alimentando mi creatividad y enfoque.",
                     "downloadCV": "Descargar CV",
-                    "skillsTitle": "Habilidades",
+                    "skillsTitle": "Mis Habilidades",
+                    "skillsDescription": "Soy desarrollador web con experiencia en JavaScript, React, NodeJS, Express, SQL, y MongoDB. Domino HTML5, CSS3, y Bootstrap para crear interfaces responsivas. Actualmente, estoy aprendiendo TypeScript para mejorar la robustez de mis aplicaciones.",
                     "projectsTitle": "Proyectos",
 
                     "projectsTitle": "Proyectos",

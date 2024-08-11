@@ -1,8 +1,8 @@
-import React from 'react';
+import "./ProjectsDetails.css"
+
 import bricksBreaker from "./../../assets/BricksBreaker.png";
 import miauyuda from "./../../assets/MiauYuda.png";
 import ripcamp from "./../../assets/RipCamp.png";
-import styles from './ProjectsDetails.module.css';
 
 import { CardText, Col } from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
@@ -36,17 +36,35 @@ const ProjectsDetails = () => {
     ];
 
     return (
-        <section>
-            <h1 id="projects" className={styles.projectsTitle}>{t('projectsTitle')}</h1>
-            <article className={styles.projectsGrid}>
+        // <section>
+        //     <h1 id="projects" className={styles.projectsTitle}>{t('projectsTitle')}</h1>
+        //     <article className={styles.projectsGrid}>
+        //         {projectCards.map((card, index) => (
+        //             <Card key={index} className={styles.projectCard}>
+        //                 <a href={card.link}>
+        //                     <Card.Img className={styles.projectImage} src={card.image} alt={card.title} />
+        //                     <Card.Body className={styles.projectCardBody}>
+        //                         <Card.Title className={styles.projectTitle}>{card.title}</Card.Title>
+        //                         <Card.Text className={styles.projectDescription}>{card.description}</Card.Text>
+        //                         <CardText className={styles.projectTech}>{card.tech}</CardText>
+        //                     </Card.Body>
+        //                 </a>
+        //             </Card>
+        //         ))}
+        //     </article>
+        // </section>
+
+        <section className='proyectsSection'>
+            <p className="titleProyectsSection">Proyects</p>
+            <p className='descriptionProyectsSection'> Some code I’ve worked on</p>
+            <article className="proyectsCardBox">
                 {projectCards.map((card, index) => (
-                    <Card key={index} className={styles.projectCard}>
+                    <Card key={index} className="proyectsCard">
                         <a href={card.link}>
-                            <Card.Img className={styles.projectImage} src={card.image} alt={card.title} />
-                            <Card.Body className={styles.projectCardBody}>
-                                <Card.Title className={styles.projectTitle}>{card.title}</Card.Title>
-                                <Card.Text className={styles.projectDescription}>{card.description}</Card.Text>
-                                <CardText className={styles.projectTech}>{card.tech}</CardText>
+                            <Card.Img className="projectImage" src={card.image} alt={card.title} />
+                            <Card.Body className="projectCardBody">
+                                <Card.Title className="projectTitle">{card.title}</Card.Title>
+                                <Card.Text className="projectDescription" >{card.description}</Card.Text>
                             </Card.Body>
                         </a>
                     </Card>
