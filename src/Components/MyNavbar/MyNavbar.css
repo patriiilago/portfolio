@@ -44,6 +44,15 @@
 
 }
 
+.contactNavbar {
+    display: flex;
+    width: 506px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+}
+
 .contactNavbar ul {
     display: flex;
     display: inline;

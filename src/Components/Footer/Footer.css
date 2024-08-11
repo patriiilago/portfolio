@@ -4,19 +4,20 @@
     padding: 10px 100px;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
+    align-self: stretch;
     background: #291C3A;
     vertical-align: middle;
 }
 
 .textFooter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    padding-bottom: 60px;
-    color: white;
-    margin-right: 20px;
+    color: #FFF;
+    text-align: center;
+    font-family: Monda;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 /*boton lenguage*/
@@ -33,18 +34,17 @@
     border: none;
     cursor: pointer;
     display: flex;
-    width: 162px;
-    padding: 5px 10px;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 8px;
-    background: #FFF;
-    vertical-align: middle;
-    display: flex;
-    width: 162px;
-    padding: 5px 10px;
+    width: 160px;
     justify-content: space-between;
     align-items: center;
+    border-radius: 8px;
+    vertical-align: middle;
+}
+
+.flag-with-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .iconbtn {
@@ -65,25 +65,26 @@
 }
 
 .dropdown-content {
-
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     bottom: 100%;
     border-radius: 8px;
-    /* vertical-align: middle; */
-
+    color: #000;
+    font-family: inherit;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
 }
 
 .dropdown-content button {
-
     color: #000;
-
     font-family: inherit;
-
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -92,10 +93,11 @@
     padding: 12px 16px;
     display: flex;
     width: 162px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    border-radius: 8px;
     vertical-align: middle;
+    border-radius: 8px;
+
 }
 
 /* .dropdown-content button:hover {
@@ -112,7 +114,7 @@
     fill: none;
 }
 
-/* Tamaño de móvil*/
+/* Tamaño de móvil
 @media (max-width: 576px) {
     .connect {
         display: flex;
@@ -135,7 +137,7 @@
 }
 
 
-/* Tamaño de ordenador (a partir de 992px) */
+/* Tamaño de ordenador (a partir de 992px) 
 @media (min-width: 993px) {
     .connect {
         display: none;
@@ -146,7 +148,7 @@
     }
 }
 
-/* Tamaño de tablet */
+/* Tamaño de tablet 
 @media (min-width: 577px) and (max-width: 992px) {
     .connect {
         display: none;
