@@ -1,17 +1,27 @@
+.summarySection {
+    background: #291C3A;
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.50);
+}
+
+.content-wrapper {
+    max-width: 1294px;
+    margin: 0 auto;
+}
+
 .professionalSummaryRow {
     display: flex;
     height: 80px;
-    padding: 26px 100px;
+    padding: 26px 0px;
     justify-content: center;
     align-items: center;
     gap: 13px;
     flex-shrink: 0;
     align-self: stretch;
-    background: #291C3A;
-    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.50);
 }
 
-.summaryExperience {
+.summaryExperience,
+.summaryProjects,
+.summarySkills {
     display: flex;
     align-items: center;
     gap: 9px;
@@ -19,37 +29,7 @@
     align-self: stretch;
 }
 
-.yearExperience {
-    color: #FFF;
-    text-align: center;
-    font-family: "Poller One";
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.textExperience {
-    color: #CCB0F0;
-    font-family: Notable;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-    width: fit-content;
-    max-width: 100px;
-    text-align: left;
-}
-
-.summaryProjects {
-    display: flex;
-    align-items: center;
-    gap: 9px;
-    flex: 1 0 0;
-    align-self: stretch;
-}
-
+.yearExperience,
 .numberProjects {
     color: #FFF;
     text-align: center;
@@ -60,6 +40,7 @@
     line-height: normal;
 }
 
+.textExperience,
 .textProjects {
     color: #CCB0F0;
     font-family: Notable;
@@ -75,10 +56,10 @@
 
 .summarySkills {
     display: flex;
-    width: 506px;
     justify-content: flex-end;
     align-items: center;
     gap: 23px;
+    width: 506px;
     align-self: stretch;
 }
 

@@ -1,6 +1,7 @@
 import "./Profile.css"
 import avatar from "./../../assets/woman-technologist.png"
 import { useTranslation } from 'react-i18next'
+import { Row, Col } from "react-bootstrap";
 
 function Profile() {
 
@@ -8,11 +9,11 @@ function Profile() {
 
     return (
 
-        <article className="profileArticle">
+        <section className="profileSection">
 
-            <section className="profile" id="avatar">
+            <Row className="profile" id="avatar">
 
-                <div className="textJob">
+                <Col className="textJob">
 
                     <p className="greeting">{t('greeting')}</p>
 
@@ -22,13 +23,16 @@ function Profile() {
 
                     <p className="jobTitle">{t('jobTitle')}</p>
 
-                </div>
+                </Col>
 
-                <img src={avatar} alt="profile avatar" className="profileAvatar" />
+                <Col>
+                    <img src={avatar} alt="profile avatar" className="profileAvatar" />
+                </Col>
 
-            </section>
 
-        </article>
+            </Row>
+
+        </section>
     )
 }
 
