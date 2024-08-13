@@ -23,7 +23,7 @@ function MyNavbar() {
                         < img src={hamburger} alt="hamburger icon" className="hamburgerIcon" />
                     </Navbar.Toggle>
 
-                    {<div className="iconsNavbar">
+                    {/* {<div className="iconsNavbar">
                         <a href="#avatar" className="arrowIconNavbar">
                             <ul>
                                 <img src={arrow} alt="arrowIconNavbar" />
@@ -34,7 +34,7 @@ function MyNavbar() {
                                 <img src={language} alt="Language Icon" className="iconLanguageNavbar" />
                             </ul>
                         </a>
-                    </div>}
+                    </div>} */}
                 </div>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="navigation">

@@ -1,8 +1,11 @@
 import { Row, Col } from "react-bootstrap"
 import "./ProfessionalSummary.css"
 
+import { useTranslation } from 'react-i18next'
+
 const ProfessionalSummary = () => {
 
+    const { t } = useTranslation()
 
     return (
         <article className="summarySection">
@@ -10,13 +13,13 @@ const ProfessionalSummary = () => {
                 <Row className="professionalSummaryRow">
 
                     <Col className="summaryExperience">
-                        <p className="yearExperience">1</p>
-                        <p className="textExperience">year of experience</p>
+                        <p className="yearExperience"> 1</p>
+                        <p className="textExperience">{t('textExperience')}</p>
                     </Col>
 
                     <Col className="summaryProjects">
                         <p className="numberProjects">3</p>
-                        <p className="textProjects">Finished  proyects</p>
+                        <p className="textProjects">{t('textProjects')}</p>
                     </Col>
 
                     <Col className="summarySkills">

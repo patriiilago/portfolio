@@ -100,9 +100,6 @@
 
 }
 
-/* .dropdown-content button:hover {
-    background-color: #f1f1f1;
-} */
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -134,18 +131,6 @@
 
 
 
-}
-
-
-/* Tamaño de ordenador (a partir de 992px) 
-@media (min-width: 993px) {
-    .connect {
-        display: none;
-    }
-
-    .textFooter {
-        margin-top: 80px;
-    }
 }
 
 /* Tamaño de tablet 

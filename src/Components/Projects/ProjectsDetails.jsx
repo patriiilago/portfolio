@@ -39,8 +39,8 @@ const ProjectsDetails = () => {
     return (
 
         <section className='proyectsSection'>
-            <p className="titleProyectsSection">Proyects</p>
-            <p className='descriptionProyectsSection'> Some code I’ve worked on</p>
+            <p className="titleProyectsSection">{t('titleProyectsSection')}</p>
+            <p className='descriptionProyectsSection'> {t('descriptionProyectsSection')}</p>
             <article className="proyectsCardBox">
                 {projectCards.map((card, index) => (
                     <Card key={index} className="proyectsCard">

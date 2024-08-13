@@ -13,9 +13,9 @@ function Contact() {
             <div className="content-wrapper">
                 <Row className="contactRow">
                     <Col className="contactCol">
-                        <p className="contact-heading">Let’s Talk!</p>
-                        <p className="contact-description">Tell me about your proyect,
-                            and I’ll <span className="highlighted-text">make it real</span></p>
+                        <p className="contact-heading">{t('contact-heading')}</p>
+                        <p className="contact-description">{t('contact-description')}
+                            <span className="highlighted-text">{t('highlighted-text')}</span></p>
                     </Col>
                     <Col>
                         <form action="https://formspree.io/f/mjkbkqbq" method="post">

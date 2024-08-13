@@ -37,8 +37,6 @@ const AboutMe = () => {
                     </article>
                 </Col>
 
-
-
             </Row >
 
         </section>
