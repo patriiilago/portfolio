@@ -120,7 +120,7 @@
 
 
 
-/*Tamaño móvil*/
+/* Tamaño móvil
 @media (max-width: 576px) {
 
     .navbar-toggler {
@@ -183,39 +183,53 @@
     }
 
     .hamburgerIcon:hover {
-        /*transformar el boton al estar extendido en otra imagen*/
     }
 
-}
+} */
 
-/* Tamaño de tablet (576px a 992px) */
-@media (min-width: 577px) and (max-width: 992px) {
-
+/* Tamaño de tablet */
+@media (max-width: 1024px) {
     .custom-navbar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.40);
+        height: 70px;
+        padding: 0 20px;
+        justify-content: space-between;
     }
 
-    .iconLanguageNavbar,
-    .arrowIconNavbar,
-    .hamburgerIcon {
-        display: none
+    .navbar-container {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
     }
 
-    .navbar-expand-lg .navbar-collapse {
-        display: none;
+    .textNavbar {
+        gap: 30px;
+        flex: 1 0 auto;
     }
 
-    .navbar-expand-lg .navbar-collapse.collapse {
-        display: flex;
-        flex-basis: auto;
+    .aboutButton {
+        font-size: 16px;
     }
 
-    .navbar-expand-lg .navbar-toggler {
-        display: block;
+    .contact-navbar {
+        width: 120px;
+        height: 30px;
+        padding: 6px 8px;
+        gap: 6px;
     }
 
+    .icon-contact-navbar {
+        width: 24px;
+        height: 18px;
+    }
 
+    .contact-navbar ul {
+        font-size: 18px;
+        width: auto;
+    }
+
+    .social-navbar {
+        gap: 5px;
+    }
 
 }

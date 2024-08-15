@@ -133,21 +133,71 @@
      transform: scale(1.05);
  }
 
- /* Tamaño de tablet 
- @media (min-width: 577px) and (max-width: 992px) {
+ /* Adaptaciones para pantallas de tabletas */
+ @media (max-width: 1024px) {
 
-     textarea,
-     input:not([type="submit"]) {
+     .contactSection {
+         height: 575px;
+     }
 
-         width: 550px;
+     .content-wrapper {
+         max-width: 700px;
+         margin: 0 auto;
+     }
+
+     .contactRow {
+         width: 690px;
+         padding: 30px;
+     }
+
+     .contactCol {
+         width: 359px;
+     }
+
+     .contact-heading {
+         font-size: 28px;
+     }
+
+     .contact-description {
+         font-size: 28px;
+     }
+
+     .highlighted-text {
+         font-size: 28px;
+     }
+
+     form {
+         gap: 20px;
+     }
+
+     .formName,
+     .formEmail,
+     .formMessage {
+         padding: 8px 12px;
+     }
+
+     .formMessage {
+         height: 200px;
+     }
+
+     .formName input,
+     .formEmail input,
+     .formMessage textarea {
+         font-size: 14px;
      }
 
      .buttonContact {
-         width: 250px;
+         width: 220px;
+         padding: 10px 12px;
+     }
+
+     .buttonContact svg {
+         width: 20px;
+         height: 20px;
      }
 
  }
-     */
+
 
  /* Tamaño de móvil
  @media (max-width: 576px) {

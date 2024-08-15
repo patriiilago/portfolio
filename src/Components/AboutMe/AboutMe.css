@@ -36,7 +36,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    max-width: 1294px;
 }
 
 .profilePhoto {
@@ -102,69 +101,97 @@
 }
 
 .buttonIcon {
-    width: 1.25rem;
+    width: 1.5rem;
     padding-left: 0.625rem;
     vertical-align: middle;
 }
 
+/* Tamaño de tablet */
+@media (max-width: 1024px) {
 
-
-
-/*Tamaño móvil*/
-
-@media (max-width: 576px) {
+    .sectionAboutMe {
+        scroll-margin-top: 80px;
+        max-width: 700px;
+        margin: 30px auto;
+        /* Reducimos los márgenes */
+        gap: 40px;
+    }
 
     .profileRows {
         flex-wrap: wrap;
-    }
-
-    .profileCol {
-        padding: 1rem;
-    }
-
-    .profileTitle {
-        font-size: 1.5rem;
-        word-wrap: break-word;
-    }
-
-    .buttonProfileText {
-        padding: 0.5rem 1.5rem;
-        word-wrap: break-word;
-    }
-
-    .buttonIcon {
-        width: 1rem;
-        padding-left: 0.5rem;
-    }
-}
-
-/* Tamaño de tablet (576px a 992px) */
-@media (min-width: 577px) and (max-width: 992px) {
-
-    .profileRows {
-        flex-wrap: wrap;
-    }
-
-    .profileCol {
-        padding: 2rem;
-    }
-
-    .profileTitle {
-        font-size: 1.75rem;
-    }
-
-    .buttonProfileText {
-        padding: 0.563rem 2rem;
-    }
-
-    .buttonIcon {
-        width: 1.125rem;
-        padding-left: 0.563rem;
-    }
-
-    .profilePhoto {
         display: flex;
         justify-content: center;
         align-items: center;
+        align-content: center;
+        gap: 10px;
+    }
+
+    .profileCol {
+        padding: 0.5rem;
+        margin-top: 20px;
+    }
+
+    .profileTitle {
+        width: 100%;
+        padding-top: 10px;
+        font-size: 28px;
+    }
+
+    .profilePhoto {
+        width: 320px;
+        height: 380px;
+        border-radius: 0px 48px 0px 0px;
+    }
+
+    .aboutMe {
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+        gap: 20px;
+    }
+
+    .profileDescription {
+        font-size: 16px;
+        height: auto;
+    }
+
+    .buttonProfileText {
+        width: 220px;
+        height: 70px;
+        font-size: 20px;
+    }
+
+    .buttonIcon {
+        width: 1.25rem;
+        padding-left: 0.5rem;
+    }
+
+}
+
+@media (max-width: 390px) {
+    .sectionAboutMe {
+        margin: 20px auto;
+        gap: 30px;
+    }
+
+    .profilePhoto {
+        width: 280px;
+        height: 340px;
+    }
+
+    .aboutMe {
+        width: 100%;
+        max-width: 100%;
+        gap: 15px;
+    }
+
+    .profileDescription {
+        font-size: 14px;
+    }
+
+    .buttonProfileText {
+        width: 200px;
+        height: 60px;
+        font-size: 18px;
     }
 }

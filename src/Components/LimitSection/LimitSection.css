@@ -11,3 +11,11 @@
     padding: 40px;
     stroke: #331C52;
 }
+
+/* Tamaño de tablet (576px a 992px) */
+@media (min-width: 577px) and (max-width: 992px) {
+    .line {
+        width: 580px;
+        stroke-width: 2px;
+    }
+}

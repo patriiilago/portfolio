@@ -106,39 +106,104 @@
     background: #D9D9D9;
 }
 
-/*Tamaño móvil*/
-@media (max-width: 576px) {
 
-    .profileAvatar {
-        margin-top: 130px;
+/* Tamaño de tablet */
+@media (max-width: 1024px) {
+
+    .profileSection {
+        padding-top: 120px;
+        padding-bottom: 60px;
+        /* Reducimos el padding inferior */
+        gap: 40px;
     }
 
-    .jobType {
-        font-size: 45px;
+    .profileRow {
+        max-width: 700px;
+        gap: 5px;
+    }
+
+    .greeting {
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+
+    .myName {
+        font-size: 2.5rem;
+        line-height: 1.1;
     }
 
     .jobTitle {
-        font-size: 45px;
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+
+    .contact-profile {
+        width: 200px;
+        height: 45px;
+        gap: 8px;
+        margin-top: 20px;
+    }
+
+    .contact-profile ul {
+        font-size: 28px;
+    }
+
+    .contact-profile svg {
+        width: 28px;
+        height: 24px;
+    }
+
+    .profileAvatar {
+        width: 320px;
+        height: 320px;
     }
 }
 
-/* Tamaño de tablet (576px a 992px)  */
-@media (min-width: 577px) and (max-width: 992px) {
+@media (max-width: 390px) {
+    .profileSection {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        gap: 30px;
+    }
+
+    .profileRow {
+        flex-direction: column-reverse;
+        max-width: 100%;
+        gap: 40px;
+    }
+
+    .profileCol {
+        margin-top: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .profile-section__content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .greeting,
+    .jobTitle,
+    .myName {
+        font-size: 1.2rem;
+    }
+
+    .myName {
+        font-size: 2rem;
+    }
+
+    .contact-profile {
+        width: 200px;
+        height: 40px;
+    }
+
+    .contact-profile ul {
+        font-size: 24px;
+    }
 
     .profileAvatar {
-        margin-top: 250px;
-    }
-
-    .jobType {
-        font-size: 65px;
-    }
-
-    .jobTitle {
-        font-size: 65px;
-    }
-
-
-    .jobTitle {
-        margin-bottom: 90px;
+        width: 280px;
+        height: 280px;
     }
 }
