@@ -1,71 +1,42 @@
-import "./Footer.css"
-import whatsapp from "./../../assets/whatsapp.png"
-import git from "./../../assets/git.png"
-import linkedin from "./../../assets/linkedin.png"
-import spainFlag from "./../../assets/spainFlag.png"
-import { useTranslation } from 'react-i18next'
-import { useState } from "react"
+import "./Footer.css";
+import spainFlag from "./../../assets/spainFlag.png";
+import { useTranslation } from 'react-i18next';
+import { useState, useEffect } from "react";
 
 const Footer = () => {
-
-    const { i18n } = useTranslation();
-
-    // const changeLanguage = () => {
-    //     const newLanguage = i18n.language === 'en' ? 'es' : 'en';
-    //     i18n.changeLanguage(newLanguage);
-    // };
-
+    const { t, i18n } = useTranslation();
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
-        setDropdownOpen(false); // Cierra el menú desplegable después de seleccionar un idioma
+        setDropdownOpen(false);
     };
 
     const toggleDropdown = () => {
         setDropdownOpen(!dropdownOpen);
     };
 
+    const currentLanguage = i18n.language;
 
     return (
-        <article className="footer" >
-            {/* <div className="connect">
-                <a href="https://api.whatsapp.com/send?phone=680294444">
-                    <ul>
-                        <img src={whatsapp} alt="WhatsApp Icon" className="whatsappIcon" />
-                    </ul>
-                </a>
-                <a href="https://github.com/patriiilago?tab=repositories">
-                    <ul>
-                        <img src={git} alt="GitHub Icon" className="githubIcon" />
-                    </ul>
-                </a>
-                <a href="https://www.linkedin.com/in/patri-lago/">
-                    <ul>
-                        <img src={linkedin} alt="LinkedIn Icon" className="linkedinIcon" />
-                    </ul>
-                </a>
-            </div> */}
-
+        <article className="footer">
             <p className="textFooter">
-
-                &copy; 2024. Patricia Lago Espiño. All rights reserved.
-
+                &copy; 2024. Patricia Lago Espiño. {t('textFooter')}
             </p>
 
             <div className="dropdown">
                 <button className="dropbtn" onClick={toggleDropdown}>
-                    {i18n.language === 'en' ? (
+                    {currentLanguage === 'en' ? (
                         <>
-                            < div className="flag-with-label">
+                            <div className="flag-with-label">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="31" height="22" viewBox="0 0 31 22" fill="none">
                                     <path d="M0.5 3.54925V6.83341H5.19L0.5 3.54925ZM4.38667 21.8334H11.3333V16.9692L4.38667 21.8334ZM19.6667 16.9701V21.8334H26.6125L19.6667 16.9701ZM0.5 15.1667V18.4509L5.19167 15.1667H0.5ZM26.6142 0.166748H19.6667V5.03091L26.6142 0.166748ZM30.5 18.4517V15.1667H25.8075L30.5 18.4517ZM30.5 6.83341V3.54925L25.8092 6.83341H30.5ZM11.3333 0.166748H4.38667L11.3333 5.03091V0.166748Z" fill="#00247D" />
                                     <path d="M21.45 15.1666L29.5433 20.8341C29.9379 20.4264 30.2218 19.9247 30.3683 19.3766L24.3558 15.1666H21.45ZM11.3333 15.1666H9.54916L1.45666 20.8333C1.89083 21.2749 2.4475 21.5908 3.07166 21.7374L11.3333 15.9525V15.1666ZM19.6667 6.83328H21.4508L29.5433 1.16662C29.1014 0.718953 28.5418 0.405488 27.9292 0.262451L19.6667 6.04745V6.83328ZM9.54916 6.83328L1.45666 1.16662C1.0618 1.57423 0.777547 2.07591 0.630829 2.62412L6.64333 6.83328H9.54916Z" fill="#CF1B2B" />
                                     <path d="M30.5 13.5001H18V21.8334H19.6667V16.9701L26.6125 21.8334H27.1667C27.6093 21.833 28.0475 21.7445 28.4555 21.5729C28.8636 21.4014 29.2334 21.1503 29.5433 20.8342L21.45 15.1667H24.3558L30.3683 19.3767C30.4458 19.0959 30.5 18.8051 30.5 18.5001V18.4517L25.8075 15.1667H30.5V13.5001ZM0.5 13.5001V15.1667H5.19167L0.5 18.4509V18.5001C0.5 19.4092 0.865833 20.2317 1.45667 20.8334L9.54917 15.1667H11.3333V15.9526L3.07167 21.7367C3.31667 21.7951 3.57 21.8334 3.83333 21.8334H4.38667L11.3333 16.9692V21.8334H13V13.5001H0.5ZM30.5 3.50008C30.5008 2.62668 30.157 1.78822 29.5433 1.16675L21.4508 6.83341H19.6667V6.04758L27.9292 0.262581C27.6795 0.201347 27.4237 0.169189 27.1667 0.166748H26.6142L19.6667 5.03091V0.166748H18V8.50008H30.5V6.83341H25.8092L30.5 3.54925V3.50008ZM11.3333 0.166748V5.03091L4.38667 0.166748H3.83333C3.39062 0.167254 2.95245 0.255943 2.54439 0.427637C2.13633 0.599331 1.76656 0.85059 1.45667 1.16675L9.54917 6.83341H6.64333L0.630833 2.62425C0.548464 2.90907 0.504465 3.20362 0.5 3.50008L0.5 3.54925L5.19 6.83341H0.5V8.50008H13V0.166748H11.3333Z" fill="#EEEEEE" />
                                     <path d="M18 8.50008V0.166748H13V8.50008H0.5V13.5001H13V21.8334H18V13.5001H30.5V8.50008H18Z" fill="#CF1B2B" />
                                 </svg>
-
                                 <p className="textbtn">English</p>
+
                             </div>
                             <svg xmlns="http://www.w3.org/2000/svg" className="iconbtn">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.09837 5.17622C4.94098 5.33341 4.72763 5.42171 4.50519 5.42171C4.28274 5.42171 4.06939 5.33341 3.912 5.17622L0.745739 2.01107C0.588343 1.8536 0.499948 1.64006 0.5 1.41741C0.500052 1.19477 0.588548 0.981261 0.746019 0.823864C0.90349 0.666468 1.11704 0.578073 1.33968 0.578125C1.56233 0.578177 1.77583 0.666673 1.93323 0.824144L4.50519 3.3961L7.07715 0.824144C7.23539 0.671162 7.44739 0.586453 7.66748 0.588261C7.88758 0.590069 8.09815 0.67825 8.25386 0.833811C8.40957 0.989372 8.49795 1.19987 8.49997 1.41996C8.50198 1.64005 8.41747 1.85213 8.26464 2.01051L5.09893 5.17678L5.09837 5.17622Z" fill="black" />
@@ -73,7 +44,7 @@ const Footer = () => {
                         </>
                     ) : (
                         <>
-                            < div className="flag-with-label">
+                            <div className="flag-with-label">
                                 <img src={spainFlag} alt="spainFlag" className="flag-icon" />
                                 <p className="textbtn">Español</p>
                             </div>
@@ -83,35 +54,32 @@ const Footer = () => {
                         </>
                     )}
                 </button>
+
                 {dropdownOpen && (
                     <div className="dropdown-content">
                         <button className="dropbtn" onClick={() => changeLanguage('en')}>
-
-                            < div className="flag-with-label">
+                            <div className="flag-with-label">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="31" height="22" viewBox="0 0 31 22" fill="none">
                                     <path d="M0.5 3.54925V6.83341H5.19L0.5 3.54925ZM4.38667 21.8334H11.3333V16.9692L4.38667 21.8334ZM19.6667 16.9701V21.8334H26.6125L19.6667 16.9701ZM0.5 15.1667V18.4509L5.19167 15.1667H0.5ZM26.6142 0.166748H19.6667V5.03091L26.6142 0.166748ZM30.5 18.4517V15.1667H25.8075L30.5 18.4517ZM30.5 6.83341V3.54925L25.8092 6.83341H30.5ZM11.3333 0.166748H4.38667L11.3333 5.03091V0.166748Z" fill="#00247D" />
                                     <path d="M21.45 15.1666L29.5433 20.8341C29.9379 20.4264 30.2218 19.9247 30.3683 19.3766L24.3558 15.1666H21.45ZM11.3333 15.1666H9.54916L1.45666 20.8333C1.89083 21.2749 2.4475 21.5908 3.07166 21.7374L11.3333 15.9525V15.1666ZM19.6667 6.83328H21.4508L29.5433 1.16662C29.1014 0.718953 28.5418 0.405488 27.9292 0.262451L19.6667 6.04745V6.83328ZM9.54916 6.83328L1.45666 1.16662C1.0618 1.57423 0.777547 2.07591 0.630829 2.62412L6.64333 6.83328H9.54916Z" fill="#CF1B2B" />
                                     <path d="M30.5 13.5001H18V21.8334H19.6667V16.9701L26.6125 21.8334H27.1667C27.6093 21.833 28.0475 21.7445 28.4555 21.5729C28.8636 21.4014 29.2334 21.1503 29.5433 20.8342L21.45 15.1667H24.3558L30.3683 19.3767C30.4458 19.0959 30.5 18.8051 30.5 18.5001V18.4517L25.8075 15.1667H30.5V13.5001ZM0.5 13.5001V15.1667H5.19167L0.5 18.4509V18.5001C0.5 19.4092 0.865833 20.2317 1.45667 20.8334L9.54917 15.1667H11.3333V15.9526L3.07167 21.7367C3.31667 21.7951 3.57 21.8334 3.83333 21.8334H4.38667L11.3333 16.9692V21.8334H13V13.5001H0.5ZM30.5 3.50008C30.5008 2.62668 30.157 1.78822 29.5433 1.16675L21.4508 6.83341H19.6667V6.04758L27.9292 0.262581C27.6795 0.201347 27.4237 0.169189 27.1667 0.166748H26.6142L19.6667 5.03091V0.166748H18V8.50008H30.5V6.83341H25.8092L30.5 3.54925V3.50008ZM11.3333 0.166748V5.03091L4.38667 0.166748H3.83333C3.39062 0.167254 2.95245 0.255943 2.54439 0.427637C2.13633 0.599331 1.76656 0.85059 1.45667 1.16675L9.54917 6.83341H6.64333L0.630833 2.62425C0.548464 2.90907 0.504465 3.20362 0.5 3.50008L0.5 3.54925L5.19 6.83341H0.5V8.50008H13V0.166748H11.3333Z" fill="#EEEEEE" />
                                     <path d="M18 8.50008V0.166748H13V8.50008H0.5V13.5001H13V21.8334H18V13.5001H30.5V8.50008H18Z" fill="#CF1B2B" />
                                 </svg>
-                                <p className="textbtn">English</p>
+                                <p className="textbtn">{currentLanguage === 'en' ? 'English' : 'Inglés'}</p>
+                            </div>
+                        </button>
+                        <button onClick={() => changeLanguage('es')}>
+                            <div className="flag-with-label">
+                                <img src={spainFlag} alt="spainFlag" className="flag-icon" />
+                                <p className="textbtn">{currentLanguage === 'en' ? 'Spanish' : 'Español'}</p>
                             </div>
                         </button>
 
-                        <button onClick={() => changeLanguage('es')}>
-                            < div className="flag-with-label">
-                                <img src={spainFlag} alt="spainFlag" className="flag-icon" />
-                                <p className="textbtn">Español</p>
-                            </div>
-                        </button>
                     </div>
                 )}
             </div>
-
         </article>
+    );
+};
 
-    )
-
-}
-
-export default Footer
+export default Footer;

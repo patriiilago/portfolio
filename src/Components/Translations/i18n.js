@@ -119,7 +119,11 @@ i18n
         fallbackLng: 'en',
         interpolation: {
             escapeValue: false
-        }
+        },
+        detection: {
+            order: ['navigator', 'cookie', 'localStorage', 'sessionStorage', 'querystring', 'htmlTag'],
+            caches: ['cookie'],
+        },
     });
 
 export default i18n;
