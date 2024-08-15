@@ -10,9 +10,9 @@ i18n
             en: {
                 translation: {
                     "greeting": "Hi!",
-                    "myName": "I'm Patricia",
-                    "lastName": "Lago Espiño",
+                    "myName": "I'm Patricia Lago Espiño",
                     "jobTitle": "Full-Stack Web Developer",
+                    "contact-me": "Hire me!",
                     "textExperience": "year of experience",
                     "textProjects": "finished  proyects",
                     "profileTitle": "About Me",
@@ -23,7 +23,7 @@ i18n
                     "skillsTitle": "My Skills",
                     "skillsDescription": "I'm a web developer with experience in JavaScript, React, NodeJS, Express, SQL, and MongoDB. I’m proficient in HTML5, CSS3, and Bootstrap for creating responsive interfaces. Currently, I'm learning TypeScript to enhance the robustness of my applications.",
                     "projectsTitle": "Projects",
-                    "titleProyectsSection": "Proyects",
+                    "titleProyectsSection": "Projects",
                     "descriptionProyectsSection": "Some code I’ve worked on",
                     "miauyuda": {
                         "title": "Miauyuda",
@@ -64,9 +64,9 @@ i18n
             es: {
                 translation: {
                     "greeting": "Hola!",
-                    "myName": "Soy Patricia",
-                    "lastName": "Lago Espiño",
+                    "myName": "Soy Patricia Lago Espiño",
                     "jobTitle": "Desarrolladora Full-Stack Web",
+                    "contact-me": "Contrátame!",
                     "textExperience": "año de experiencia",
                     "textProjects": "proyectos finalizados",
                     "profileTitle": "Sobre mí",

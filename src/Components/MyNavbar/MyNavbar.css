@@ -3,26 +3,49 @@
     box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.50);
     transition: top 0.3s;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    z-index: 1000;
+    height: 80px;
     border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar-container {
+    width: 100%;
+    max-width: 1294px;
+    margin: 0 auto;
+}
+
+.navbar-header,
+.iconLanguageNavbar,
+.arrowIconNavbar,
+.hamburgerIcon {
+    display: none
 }
 
 .navigation {
     display: flex;
-    height: 80px;
     align-items: center;
-    flex-shrink: 0;
     font-family: 'Lexend', Arial, sans-serif;
+}
+
+.textNavbar {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex: 1 0 0;
+    align-self: stretch;
 }
 
 .textNavbar ul {
     text-decoration: none;
-    padding: 0 5px;
-    color: white;
     display: inline-block;
+    margin: 0px;
+    padding: 0 0px;
+}
+
+.aboutButton {
     color: #FFF;
     font-family: Lexend;
     font-size: 18px;
@@ -32,28 +55,58 @@
 }
 
 .aboutButton:hover,
-.aboutButton:active {
+.contact-navbar:hover,
+.social-navbar svg:hover {
     transform: scale(1.10);
-
 }
 
-
-.navbar-toggler {
-    background-color: transparent;
-    border: 1px solid transparent;
-
-}
-
-.contactNavbar {
+.contact-navbar {
     display: flex;
-    width: 506px;
+    width: 140px;
+    height: 33px;
+    padding: 8px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: #FFF;
+}
+
+.icon-contact-navbar {
+    width: 27.5px;
+    height: 20px;
+    flex-shrink: 0;
+    fill: #9013FE;
+}
+
+.contact-navbar ul {
+    width: 62px;
+    height: 34px;
+    flex-shrink: 0;
+    color: #9013FE;
+    font-family: "Monomaniac One";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contact-navbar,
+.contact-navbar ul,
+.contact-navbar:hover,
+.contact-button-navbar:hover {
+    text-decoration: none;
+}
+
+.social-navbar {
+    display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 40px;
     align-self: stretch;
 }
 
-.contactNavbar ul {
+.social-navbar ul {
     display: flex;
     display: inline;
     justify-content: flex-end;
@@ -62,6 +115,8 @@
     flex: 1 0 0;
     align-self: stretch;
 }
+
+
 
 
 
@@ -166,7 +221,7 @@
 }
 
 /* Tamaño ordenador*/
-@media (min-width: 993px) {
+/* @media (min-width: 993px) {
 
     .custom-navbar {
         display: flex;
@@ -202,13 +257,13 @@
 
     .navbar-toggler {
         padding: 0;
-        /* Reducir o eliminar el padding del botón del menú */
+        /* Reducir o eliminar el padding del botón del menú 
     }
 
     .aboutButton {
         padding: 5px;
-        /* Reducir el padding de los botones de navegación */
+        /* Reducir el padding de los botones de navegación 
     }
 
 
-}
+} */

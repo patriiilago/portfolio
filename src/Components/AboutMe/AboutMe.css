@@ -1,4 +1,5 @@
 .sectionAboutMe {
+    scroll-margin-top: 80px;
     width: 100%;
     max-width: 1294px;
     margin: 40px auto;
@@ -69,6 +70,10 @@
     line-height: normal;
 }
 
+.buttonProfile,
+.buttonProfile:hover {
+    text-decoration: none;
+}
 
 .buttonProfileText {
     display: flex;

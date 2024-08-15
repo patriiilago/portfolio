@@ -9,7 +9,7 @@ function Contact() {
     const { t } = useTranslation()
 
     return (
-        <section className="contactSection">
+        <section className="contactSection" id="contact">
             <div className="content-wrapper">
                 <Row className="contactRow">
                     <Col className="contactCol">

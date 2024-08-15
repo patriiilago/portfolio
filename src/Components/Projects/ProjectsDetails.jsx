@@ -38,7 +38,7 @@ const ProjectsDetails = () => {
 
     return (
 
-        <section className='proyectsSection'>
+        <section className='proyectsSection' id="projects">
             <p className="titleProyectsSection">{t('titleProyectsSection')}</p>
             <p className='descriptionProyectsSection'> {t('descriptionProyectsSection')}</p>
             <article className="proyectsCardBox">

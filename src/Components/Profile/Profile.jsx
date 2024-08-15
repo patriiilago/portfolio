@@ -11,21 +11,33 @@ function Profile() {
 
         <section className="profileSection">
 
-            <Row className="profile" id="avatar">
+            <Row className="profileRow" id="avatar">
 
-                <Col className="textJob">
+                <Col className="profileCol">
 
-                    <p className="greeting">{t('greeting')}</p>
+                    <article className="profile-section__content">
 
-                    <p className="myName">{t('myName')}</p>
+                        <p className="greeting">{t('greeting')}</p>
 
-                    <p className="lastName">{t('lastName')}</p>
+                        <p className="myName">{t('myName')}</p>
 
-                    <p className="jobTitle">{t('jobTitle')}</p>
+                        <p className="jobTitle">{t('jobTitle')}</p>
+
+                        <a href="#contact" className="contact-profile">
+
+                            <ul>{t('contact-me')}</ul>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="27" viewBox="0 0 33 27" fill="none">
+                                <path d="M11.7941 0.5L24.9706 13.5L11.7941 26.5V15.3571H0.5V11.6429H11.7941V0.5ZM28.7353 26.5V0.5H32.5V26.5H28.7353Z" fill="#9013FE" />
+                            </svg>
+
+                        </a>
+
+                    </article>
 
                 </Col>
 
-                <Col>
+                <Col className="profileCol">
                     <img src={avatar} alt="profile avatar" className="profileAvatar" />
                 </Col>
 

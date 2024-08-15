@@ -12,8 +12,8 @@ const AboutMe = () => {
 
     return (
 
-        <section className="sectionAboutMe">
-            <h2 id="aboutme" className="profileTitle">{t('profileTitle')}</h2>
+        <section className="sectionAboutMe" id="aboutme">
+            <h2 className="profileTitle">{t('profileTitle')}</h2>
             <Row className="profileRows">
 
                 <Col md={6} className="profileCol">

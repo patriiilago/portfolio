@@ -48,11 +48,14 @@ function MyNavbar() {
                             <a href="#projects" className="aboutButton">
                                 <ul>{t('projects')}</ul>
                             </a>
-                            <a href="#contact" className="aboutButton">
+                            <a href="#contact" className="contact-navbar">
+                                <svg className="icon-contact-navbar" xmlns="http://www.w3.org/2000/svg" width="28" height="20" viewBox="0 0 28 20" fill="none">
+                                    <path d="M25.25 0H11.5C10.125 0 9 1.125 9 2.5V20L14 15H25.25C26.625 15 27.75 13.875 27.75 12.5V2.5C27.75 1.125 26.625 0 25.25 0ZM25.25 12.5H13L11.5 14V2.5H25.25V12.5ZM4 2.5C3.25 2.5 2.75 3 2.75 3.75C2.75 4.5 3.25 5 4 5H6.5V2.5H4ZM2.75 7.5C2 7.5 1.5 8 1.5 8.75C1.5 9.5 2 10 2.75 10H6.5V7.5H2.75ZM1.5 12.5C0.75 12.5 0.25 13 0.25 13.75C0.25 14.5 0.75 15 1.5 15H6.5V12.5H1.5Z" fill="#9013FE" />
+                                </svg>
                                 <ul>{t('contact')}</ul>
                             </a>
                         </div>
-                        <div className="contactNavbar">
+                        <div className="social-navbar">
                             <a href="https://www.linkedin.com/in/patri-lago/">
                                 <ul>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
