@@ -44,7 +44,7 @@
     height: 460px;
     object-fit: cover;
     border-radius: 0px 64px 0px 0px;
-    background: url(<path-to-image>) lightgray -127.043px -92.584px / 168.544% 121.407% no-repeat;
+    background: lightgray -127.043px -92.584px / 168.544% 121.407% no-repeat;
     box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -134,9 +134,7 @@
 
     .buttonIcon {
         width: 1rem;
-        /* 16px = 1rem */
         padding-left: 0.5rem;
-        /* 8px = 0.5rem */
     }
 }
 
