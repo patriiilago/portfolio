@@ -188,7 +188,7 @@
 } */
 
 /* Tamaño de tablet */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .custom-navbar {
         box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.40);
         height: 70px;
@@ -232,4 +232,52 @@
         gap: 5px;
     }
 
+}
+
+@media (max-width: 390px) {
+    .custom-navbar {
+        box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.30);
+        height: 60px;
+        padding: 0 15px;
+        justify-content: flex-start;
+    }
+
+    .navbar-container {
+        width: 299px;
+        margin: 0px 0px;
+    }
+
+    .textNavbar {
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .aboutButton {
+        font-size: 14px;
+        padding: 4px 10px;
+    }
+
+    .contact-navbar {
+        width: 100px;
+        height: 28px;
+        padding: 5px 6px;
+        gap: 4px;
+    }
+
+    .icon-contact-navbar {
+        width: 20px;
+        height: 16px;
+    }
+
+    .contact-navbar ul {
+        font-size: 16px;
+    }
+
+    .social-navbar {
+        display: none;
+        gap: 3px;
+        justify-content: center;
+    }
 }

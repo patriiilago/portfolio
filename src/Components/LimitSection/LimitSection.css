@@ -12,10 +12,17 @@
     stroke: #331C52;
 }
 
-/* Tamaño de tablet (576px a 992px) */
-@media (min-width: 577px) and (max-width: 992px) {
+/* Tamaño de tablet*/
+@media (max-width: 1024px) {
     .line {
         width: 580px;
         stroke-width: 2px;
+    }
+}
+
+@media (max-width: 390px) {
+    .line {
+        max-width: 299px;
+        margin: 20px auto;
     }
 }

@@ -118,33 +118,39 @@
 }
 
 @media (max-width: 390px) {
+
     .content-wrapper {
         max-width: 100%;
-        /* Permitimos que el contenido ocupe todo el ancho disponible */
     }
 
     .professionalSummaryRow {
+        max-width: 299px;
+        height: auto;
         padding: 15px 0;
-        /* Reducimos el padding */
-        gap: 15px;
-        /* Reducimos el espacio entre los elementos */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .summaryExperience,
+    .summaryProjects {
+        width: calc(50% - 5px);
     }
 
     .yearExperience,
     .numberProjects {
-        font-size: 40px;
-        /* Reducimos aún más el tamaño de la fuente */
+        font-size: 36px;
+        margin: 12px 0;
     }
 
     .textExperience,
     .textProjects {
         font-size: 12px;
-        /* Reducimos más el tamaño de la fuente */
     }
 
     .iconSummarySkills {
-        width: 28px;
-        /* Reducimos más el tamaño del icono */
-        height: 28px;
+        width: 20px;
+        height: 20px;
     }
 }

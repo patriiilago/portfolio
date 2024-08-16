@@ -177,6 +177,13 @@
 }
 
 @media (max-width: 390px) {
+
+    .skills-section {
+        scroll-margin-top: 80px;
+        max-width: 299px;
+        gap: 40px;
+    }
+
     .skill-card {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px 20px;

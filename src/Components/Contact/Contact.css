@@ -1,4 +1,5 @@
  .contactSection {
+     scroll-margin-top: 50px;
      display: flex;
      height: 650px;
      flex-direction: column;
@@ -128,13 +129,16 @@
      fill: #FFF;
  }
 
-
  .buttonContact:hover {
      transform: scale(1.05);
  }
 
+ .social-contact {
+     display: none;
+ }
+
  /* Adaptaciones para pantallas de tabletas */
- @media (max-width: 1024px) {
+ @media (max-width: 768px) {
 
      .contactSection {
          height: 575px;
@@ -196,25 +200,110 @@
          height: 20px;
      }
 
+     .social-contact {
+         display: none;
+     }
+
  }
 
 
- /* Tamaño de móvil
- @media (max-width: 576px) {
+ /* Tamaño de móvil*/
+ @media (max-width: 390px) {
+     .contactSection {
+         scroll-margin-top: 120px;
+         margin-top: 50px;
+         height: 900px;
+         padding: 40px 20px;
+         position: relative;
+     }
 
-     textarea,
-     input:not([type="submit"]) {
+     .content-wrapper {
+         scroll-margin-top: 80px;
+         max-width: 299px;
+         margin: 0 auto;
+     }
 
-         width: 250px;
+     .contactRow {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         width: 100%;
+         margin: 0 auto;
+         height: 100%;
+     }
+
+     .contactCol {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+         max-width: 299px;
+         padding: 30px;
+     }
+
+     .contact-heading {
+         font-size: 28px;
+     }
+
+     .contact-description {
+         font-size: 28px;
+         text-align: center;
+     }
+
+     .highlighted-text {
+         font-size: 28px;
+     }
+
+     form {
+         gap: 20px;
+     }
+
+     .formName,
+     .formEmail,
+     .formMessage {
+         padding: 8px 12px;
+     }
+
+     .formMessage {
+         height: 150px;
+     }
+
+     .formName input,
+     .formEmail input,
+     .formMessage textarea {
+         font-size: 14px;
      }
 
      .buttonContact {
-         width: 200px;
+         width: 180px;
+         padding: 10px 12px;
      }
 
-     .contactMe {
-         margin-bottom: 40px;
+     .buttonContact svg {
+         width: 20px;
+         height: 20px;
      }
 
+     .social-contact {
+         width: 299px;
+         display: flex;
+         align-items: center;
+         justify-content: flex-end;
+         margin-top: 80px;
+     }
+
+     .social-contact ul {
+         display: flex;
+         display: inline;
+         align-items: center;
+         justify-content: center;
+         margin: 0 15px;
+         transition: transform 0.3s ease;
+     }
+
+     .social-contact a:hover {
+         transform: scale(1.15);
+     }
  }
-     */

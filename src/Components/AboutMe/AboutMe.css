@@ -1,5 +1,5 @@
 .sectionAboutMe {
-    scroll-margin-top: 80px;
+    scroll-margin-top: 50px;
     width: 100%;
     max-width: 1294px;
     margin: 40px auto;
@@ -107,13 +107,12 @@
 }
 
 /* Tamaño de tablet */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 
     .sectionAboutMe {
-        scroll-margin-top: 80px;
+        scroll-margin-top: 150px;
         max-width: 700px;
         margin: 30px auto;
-        /* Reducimos los márgenes */
         gap: 40px;
     }
 
@@ -169,7 +168,10 @@
 }
 
 @media (max-width: 390px) {
+
     .sectionAboutMe {
+        scroll-margin-top: 150px;
+        max-width: 299px;
         margin: 20px auto;
         gap: 30px;
     }
@@ -180,13 +182,12 @@
     }
 
     .aboutMe {
-        width: 100%;
-        max-width: 100%;
         gap: 15px;
     }
 
     .profileDescription {
         font-size: 14px;
+        height: 220px;
     }
 
     .buttonProfileText {
