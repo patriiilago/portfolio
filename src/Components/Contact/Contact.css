@@ -208,7 +208,7 @@
 
 
  /* Tamaño de móvil*/
- @media (max-width: 390px) {
+ @media (max-width: 490px) {
      .contactSection {
          scroll-margin-top: 120px;
          margin-top: 50px;

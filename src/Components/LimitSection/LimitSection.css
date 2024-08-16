@@ -20,7 +20,7 @@
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 490px) {
     .line {
         max-width: 299px;
         margin: 20px auto;
