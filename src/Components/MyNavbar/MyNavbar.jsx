@@ -1,11 +1,7 @@
 import "./MyNavbar.css"
 
 import hamburger from "./../../assets/menuHamburger.png"
-import arrow from "./../../assets/arrow.png"
-import language from "./../../assets/language.png"
-import whatsapp from "./../../assets/whatsapp.png"
-import git from "./../../assets/git.png"
-import linkedin from "./../../assets/linkedin.png"
+
 
 import { Nav, Navbar, Container } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'

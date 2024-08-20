@@ -1,8 +1,8 @@
 import "./ProjectsDetails.css"
 
-import bricksBreaker from "./../../assets/BricksBreaker.png";
-import miauyuda from "./../../assets/MiauYuda.png";
-import ripcamp from "./../../assets/RipCamp.png";
+import miauyuda from "./../../assets/MiauYuda.png"
+import RipCamp from "./../../assets/RipCamp.png"
+import bricksBreaker from "./../../assets/BricksBreaker.png"
 
 import Card from 'react-bootstrap/Card';
 import { useTranslation } from 'react-i18next';
@@ -28,7 +28,7 @@ const ProjectsDetails = () => {
             tech: t('bricksBreaker.tech')
         },
         {
-            image: ripcamp,
+            image: RipCamp,
             link: "https://ripcamp.netlify.app/",
             title: t('ripcamp.title'),
             description: t('ripcamp.description'),
