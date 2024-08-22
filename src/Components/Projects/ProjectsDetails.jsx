@@ -15,7 +15,7 @@ const ProjectsDetails = () => {
 
         {
             image: miauyuda,
-            link: "https://miauyuda.netlify.app/",
+            link: "https://miauyuda-project.netlify.app/",
             title: t('miauyuda.title'),
             description: t('miauyuda.description'),
             tech: t('miauyuda.tech')
@@ -29,7 +29,7 @@ const ProjectsDetails = () => {
         },
         {
             image: RipCamp,
-            link: "https://ripcamp.netlify.app/",
+            link: "https://ripcamp-project.netlify.app/",
             title: t('ripcamp.title'),
             description: t('ripcamp.description'),
             tech: t('ripcamp.tech')
