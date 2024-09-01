@@ -15,7 +15,7 @@ const ProjectsDetails = () => {
 
         {
             image: miauyuda,
-            link: "https://miauyuda-project.netlify.app/",
+            link: "https://miauyuda.netlify.app/",
             title: t('miauyuda.title'),
             description: t('miauyuda.description'),
             tech: t('miauyuda.tech')
